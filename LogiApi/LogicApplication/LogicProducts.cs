@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Reactive.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace LogiApi.LogicApplication
 {
@@ -16,11 +17,11 @@ namespace LogiApi.LogicApplication
         /// </summary>
         /// <param name="modelProduct"></param>
         /// <returns></returns>
-        public IObservable<ProductsModel>  SetProduct(ProductsModel modelProduct)
+        public async Task<ProductsModel>  SetProduct(ProductsModel modelProduct)
         {
             try
             {
-              return  _ProductsRepository.SetProduct(modelProduct);
+              return await  _ProductsRepository.SetProduct(modelProduct);
             }
             catch (Exception e) { throw e; }
         }
@@ -29,11 +30,11 @@ namespace LogiApi.LogicApplication
         /// This method call to repository and get the products from there
         /// </summary>
         /// <returns></returns>
-        public IObservable<List<ProductsModel>> GetProducts()
+        public async Task<List<ProductsModel>> GetProducts()
         {
             try
             {
-                return  _ProductsRepository.GetProducts();
+                return await  _ProductsRepository.GetProducts();
             }
             catch (Exception e) { throw e; }
         }
@@ -43,17 +44,18 @@ namespace LogiApi.LogicApplication
         /// </summary>
         /// <param name="modelProduct"></param>
         /// <returns></returns>
-        public IObservable<ProductsModel> UpdateProducts(ProductsModel modelProduct)
+        public async Task<ProductsModel> UpdateProducts(ProductsModel modelProduct)
         {
             try
             {
-                return _ProductsRepository.GetProductById(modelProduct.idProduct).Do(product =>
+                return await _ProductsRepository.GetProductById(modelProduct.idProduct).Do(async product => 
                 {
                     product.nameProduct = modelProduct.nameProduct;
                     product.quantityAvaible = modelProduct.quantityAvaible;
 
-                    _ProductsRepository.UpdateProduct(product);
+                    await _ProductsRepository.UpdateProduct(product);
                 });
+
             }
             catch (Exception e) { throw e; }
         }
