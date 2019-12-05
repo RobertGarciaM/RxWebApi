@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\DataApi.deps.json
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\DataApi.runtimeconfig.json
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\DataApi.runtimeconfig.dev.json
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\DataApi.dll
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\DataApi.pdb
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\DomainToApi.dll
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\DomainToApi.pdb
+C:\Users\rober\source\repos\RxWebApi\DataApi\obj\Debug\netcoreapp3.0\DataApi.csprojAssemblyReference.cache
+C:\Users\rober\source\repos\RxWebApi\DataApi\obj\Debug\netcoreapp3.0\DataApi.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\RxWebApi\DataApi\obj\Debug\netcoreapp3.0\DataApi.AssemblyInfo.cs
+C:\Users\rober\source\repos\RxWebApi\DataApi\obj\Debug\netcoreapp3.0\DataApi.csproj.CopyComplete
+C:\Users\rober\source\repos\RxWebApi\DataApi\obj\Debug\netcoreapp3.0\DataApi.dll
+C:\Users\rober\source\repos\RxWebApi\DataApi\obj\Debug\netcoreapp3.0\DataApi.pdb
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\System.Reactive.dll
+C:\Users\rober\source\repos\RxWebApi\DataApi\bin\Debug\netcoreapp3.0\System.Reactive.xml
